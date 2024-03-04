@@ -1,0 +1,17 @@
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\BussinessLogic.deps.json
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\BussinessLogic.dll
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\BussinessLogic.pdb
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\DataContext.dll
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\Entidades.dll
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\DataContext.pdb
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\bin\Debug\net6.0\Entidades.pdb
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.csproj.AssemblyReference.cache
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.AssemblyInfoInputs.cache
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.AssemblyInfo.cs
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\Bussines.273F0448.Up2Date
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.dll
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\refint\BussinessLogic.dll
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\BussinessLogic.pdb
+C:\Users\chris\source\repos\ServicesApiNet6\BussinessLogic\obj\Debug\net6.0\ref\BussinessLogic.dll
