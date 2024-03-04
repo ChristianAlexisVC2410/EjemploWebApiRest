@@ -1,0 +1,117 @@
+﻿@model IEnumerable<ASP.NET_MVC.Models.Fabricante>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                    @Html.ActionLink("Modificar", "EditarFabricante", new { id = item.Id }) |
+
+                    <a href="#" class="btn btn-danger eliminar-fabricante" data-fabricante-id="@item.Id">Eliminar</a>
+
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<h1>Ejemplo SweetAlert2</h1>
+<button id="showAlertBtn">Mostrar Alerta</button>
+
+   @section Scripts {
+    
+    <script>
+        $(document).ready(function () {
+            var strValue = '@(ViewBag.msg ?? "")';
+            var strCode='@(ViewBag.code ?? "")'
+            if (strValue != "") {
+                if (strCode == "200") {
+                    console.log("Mensaje obtenido:", strValue);
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "@ViewBag.msg",
+                        showConfirmButton: false,
+                        timer: 2500
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "@ViewBag.msg",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                    });
+                }
+
+            }
+          
+           
+        });
+
+        var csrfToken = '@Html.AntiForgeryToken()';
+        $(document).ready(function () {
+            $('.eliminar-fabricante').click(function (e) {
+                e.preventDefault(); // Evita que el enlace ejecute su acción predeterminada (navegar a otra página)
+                var fabricanteId = $(this).data('fabricante-id'); // Obtiene el ID del fabricante desde el atributo de datos
+
+                Swal.fire({
+                    title: '¿Estás seguro?',
+                    text: '¡No podrás revertir esto!',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Sí, eliminar',
+                    cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // Si el usuario confirma, ejecuta la eliminación
+                        $.ajax({
+                            url: '/Fabricante/Delete/', // URL de la acción del controlador
+                            type: 'POST', // Método HTTP POST
+                            headers: {
+                                'X-CSRF-TOKEN': csrfToken // Incluye el token CSRF en los encabezados de la solicitud
+                            },
+                            data: { id: fabricanteId }, // Datos a enviar (en este caso, el ID del fabricante)
+                            success: function (data) {
+                                Swal.fire('¡Eliminado!', 'El fabricante ha sido eliminado.', 'success');
+                                // Puedes redirigir a otra página después de eliminar
+                                window.location.href = '/Fabricante';
+                            },
+                            error: function () {
+                                Swal.fire('¡Error!', 'Ha ocurrido un error al intentar eliminar el fabricante.', 'error');
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+}
+

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<ASP.NET_MVC.Models.Producto>
+
+@{
+    ViewData["Title"] = "IndexProducto";
+}
+
+<h1>IndexProducto</h1>
+
+<p>
+    <a asp-action="CreateProducto">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fabricante)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fabricante.Nombre)
+                </td>
+            <td>
+                @Html.ActionLink("Modificar", "EditProducto", new { id=item.IdProducto }) |
+                <a href="#" class="btn btn-danger eliminar-producto" data-producto-id="@item.IdProducto">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+ @section Scripts {
+  
+    <script>
+
+
+        $(document).ready(function () {
+            $('.eliminar-producto').click(function (e) {
+                e.preventDefault(); // Evita que el enlace ejecute su acción predeterminada (navegar a otra página)
+                var productoId = $(this).data('producto-id'); // Obtiene el ID del producto desde el atributo de datos
+
+                if (confirm("¿Estás seguro de que quieres eliminar este producto?")) {
+                    $.ajax({
+                        url: '/Producto/DeleteProducto/', // URL de la acción del controlador
+                        type: 'POST', // Método HTTP POST
+                  
+                        data: { id: productoId}, // Datos a enviar (en este caso, el ID del fabricante)
+                        success: function (data) {
+                            alert("Producto eliminado correctamente");
+                            // Puedes redirigir a otra página después de eliminar
+                            // window.location.href = '/Fabricante/Index';
+                        },
+                        error: function () {
+                            alert("Error al eliminar el Producto");
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+}
