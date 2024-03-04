@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VuUJ6R1lJ289NE46p1I2CKrOfNx/E12KujnpTLjokEibOca+EHLU2fkVfHbJM4v7GUUxEUSxG9p3U3oPXBHrWQ==",
+  "dgSpecHash": "1/0qo66Gej2U/FJI4RSlxglN+12jJDir0QW3RnBwxtXAWZLucUnjxEF0292pzsUt79k22Np/GL+CVvnT6Xx02w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\BussinessLogic\\BussinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\BussinessLogic\\BussinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\chris\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",

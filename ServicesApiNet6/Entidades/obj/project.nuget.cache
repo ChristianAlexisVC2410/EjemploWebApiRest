@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rdhWwT+cxRBYTDUv9gbuxhpvCpoTyS70e6OvgYrOy8DytqebgclyNYbpSRBRBDUcj3VZSJnTDmFMA8DImxvQPw==",
+  "dgSpecHash": "Y/Bgydjj1pdDXkT7S3MN8cynOO+HeOfBV8H332Ln36EBraAQn3RvG1OX4uX2xg5MvpgHOxH7AV2dC+31XCrhrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

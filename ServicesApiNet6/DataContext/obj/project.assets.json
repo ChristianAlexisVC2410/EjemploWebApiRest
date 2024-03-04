@@ -697,11 +697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\DataContext\\DataContext.csproj",
+      "projectUniqueName": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\DataContext\\DataContext.csproj",
       "projectName": "DataContext",
-      "projectPath": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\DataContext\\DataContext.csproj",
+      "projectPath": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\DataContext\\DataContext.csproj",
       "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\DataContext\\obj\\",
+      "outputPath": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\DataContext\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -718,8 +718,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\chris\\source\\repos\\ServicesApiNet6\\Entidades\\Entidades.csproj"
+            "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\chris\\Desktop\\EjemploWebApiRest\\ServicesApiNet6\\Entidades\\Entidades.csproj"
             }
           }
         }
